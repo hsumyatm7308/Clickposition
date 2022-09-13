@@ -1,0 +1,41 @@
+
+body{
+    height: 100vh;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    height: 100%;
+    position: relative;
+    background-image: url('./Human-Body.jpg');
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.point{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;    
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+
+    animation: pointani 2s infinite;
+}
+
+@keyframes pointani {
+    to{
+        opacity: 1;
+    }
+}
+
+
+
